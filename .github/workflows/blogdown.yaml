@@ -1,17 +1,19 @@
-name: Build and Deploy
+name: Build and Deploy Site
 
 on:
   push:
-    branches: [ main ]
+    branches: [main, master]
 
+# Set permissions to allow GitHub Pages deployment
 permissions:
   contents: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
           submodules: true
 
@@ -21,8 +23,34 @@ jobs:
           hugo-version: '0.92.2'
           extended: true
 
-      - name: Build
-        run: hugo --minify
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.2.0'
+
+      - name: Install R Packages
+        run: |
+          Rscript -e 'install.packages(c("blogdown", "rmarkdown"))'
+
+      - name: Set Permissions
+        run: |
+          chmod -R 755 .
+
+      - name: Ensure config file has newline
+        run: |
+          # Add a newline to the end of config.yaml if missing
+          [ -f config.yaml ] && echo "" >> config.yaml
+
+      # You can use either the Hugo direct build or blogdown
+      # Try the Hugo direct build first, and if it fails, you can switch to blogdown
+      - name: Build Site with Hugo
+        run: |
+          hugo --minify
+
+      # Uncomment this and comment out the Hugo build if you need to use blogdown instead
+      # - name: Build Site with Blogdown
+      #   run: |
+      #     Rscript -e 'setwd(getwd()); blogdown::build_site(build_rmd = TRUE)'
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
