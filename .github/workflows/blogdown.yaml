@@ -38,5 +38,4 @@ jobs:
         with:
           branch: gh-pages
           folder: public
-          clean: tru
-          
+          clean: true
