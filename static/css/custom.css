@@ -31,41 +31,32 @@ body {
   color: var(--secondary-color);
 }
 
-/* Image styling */
+/* Gallery styling */
 .content img {
   max-width: 100%;
   height: auto;
   margin: 1em 0;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Beer series display */
-.beer-series {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  margin: 2rem 0;
 }
 
 @media (min-width: 768px) {
-  .beer-series {
-    grid-template-columns: repeat(2, 1fr);
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 }
 
-.beer-item {
-  padding: 1rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
+/* Logo styling */
+.nav-logo img {
+  max-height: 80px;  /* Increase maximum height */
+  width: auto;       /* Let width adjust automatically to maintain proportions */
+  padding: 10px;     /* Add some padding around the logo */
 }
 
-/* Footer styling */
-.footer {
-  margin-top: 2rem;
-  padding: 1rem 0;
-  border-top: 1px solid #eee;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
+/* Make sure the header has enough height */
+.nav {
+  min-height: 90px;  /* Ensure enough space for the larger logo */
+  display: flex;
+  align-items: center;
 }
