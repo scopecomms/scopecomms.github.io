@@ -1,0 +1,71 @@
+/* Main colors based on SCOPE logo */
+:root {
+  --primary-color: #234b9a;  /* Dark blue */
+  --secondary-color: #4dc6bd; /* Teal */
+  --background-color: #ffffff;
+  --text-color: #333333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header styling */
+.nav-logo img {
+  max-height: 60px;
+}
+
+.nav-links a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Content styling */
+.content h1, .content h2, .content h3 {
+  color: var(--primary-color);
+}
+
+.content a {
+  color: var(--secondary-color);
+}
+
+/* Image styling */
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin: 1em 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Beer series display */
+.beer-series {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .beer-series {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.beer-item {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Footer styling */
+.footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}

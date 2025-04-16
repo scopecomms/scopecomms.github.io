@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SCOPE</title>
+    <link>https://scopecomms.github.io/</link>
+    <description>Recent content on SCOPE</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate>
+    <atom:link href="https://scopecomms.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Plain Markdown Post</title>
+      <link>https://scopecomms.github.io/post/2016-12-30-hello-markdown/</link>
+      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
+      <guid>https://scopecomms.github.io/post/2016-12-30-hello-markdown/</guid>
+      <description>&lt;p&gt;This is a post written in plain Markdown (&lt;code&gt;*.md&lt;/code&gt;) instead of R Markdown (&lt;code&gt;*.Rmd&lt;/code&gt;). The major differences are:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (&lt;code&gt;```{r}&lt;/code&gt;);&lt;/li&gt;&#xA;&lt;li&gt;A plain Markdown post is rendered through &lt;a href=&#34;https://gohugo.io/overview/configuration/&#34;&gt;Blackfriday&lt;/a&gt;, and an R Markdown document is compiled by &lt;a href=&#34;http://rmarkdown.rstudio.com&#34;&gt;&lt;strong&gt;rmarkdown&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;http://pandoc.org&#34;&gt;Pandoc&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown. For example, you can write a task list with Blackfriday but not with Pandoc:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://scopecomms.github.io/about/</link>
+      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
+      <guid>https://scopecomms.github.io/about/</guid>
+      <description>&lt;p&gt;This is a &amp;ldquo;hello world&amp;rdquo; example website for the &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;&lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt; package. The theme was forked from &lt;a href=&#34;https://github.com/jrutheiser/hugo-lithium-theme&#34;&gt;@jrutheiser/hugo-lithium-theme&lt;/a&gt; and modified by &lt;a href=&#34;https://github.com/yihui/hugo-lithium&#34;&gt;Yihui Xie&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>https://scopecomms.github.io/post/2015-01-01-lorem-ipsum/</link>
+      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+      <guid>https://scopecomms.github.io/post/2015-01-01-lorem-ipsum/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Lorem ipsum&lt;/strong&gt; dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore &lt;em&gt;magna aliqua&lt;/em&gt;. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Brewing Scientists</title>
+      <link>https://scopecomms.github.io/brewing-scientists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scopecomms.github.io/brewing-scientists/</guid>
+      <description>&lt;h2 id=&#34;about-brewing-scientists&#34;&gt;About Brewing Scientists&lt;/h2&gt;&#xA;&lt;p&gt;Combining science communication with craft brewing to create engaging public events in collaboration with Steel String Brewery.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://scopecomms.github.io/images/LabLager-Flyer-Social.png&#34; alt=&#34;Lab to Lager Event&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;our-approach&#34;&gt;Our Approach&lt;/h2&gt;&#xA;&lt;p&gt;Scientists create beer labels with accessible language about their research findings. The public events include scientific presentations geared for the local community, benefiting both scientists and non-scientists.&lt;/p&gt;&#xA;&lt;h2 id=&#34;beer-series&#34;&gt;Beer Series&lt;/h2&gt;&#xA;&lt;p&gt;We collaborate with Steel String Brewery to create science-themed beverages that communicate complex research in accessible ways.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Virtual Panels</title>
+      <link>https://scopecomms.github.io/virtual-panels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scopecomms.github.io/virtual-panels/</guid>
+      <description>&lt;h2 id=&#34;about-our-virtual-panels&#34;&gt;About Our Virtual Panels&lt;/h2&gt;&#xA;&lt;p&gt;Our virtual workshops feature graduate students who have led successful projects and initiatives in helping the public build trust in science.&lt;/p&gt;&#xA;&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Panel 1: Building Trust in Science Communication&lt;/li&gt;&#xA;&lt;li&gt;Panel 2: Engaging Communities through Creative Media&lt;/li&gt;&#xA;&lt;li&gt;Panel 3: From Lab to Public: Translating Complex Research&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;upcoming-panels&#34;&gt;Upcoming Panels&lt;/h2&gt;&#xA;&lt;p&gt;Information about upcoming panels will be posted here.&lt;/p&gt;&#xA;&lt;h2 id=&#34;previous-panels&#34;&gt;Previous Panels&lt;/h2&gt;&#xA;&lt;h3 id=&#34;panel-1-building-trust-in-science-communication&#34;&gt;Panel 1: Building Trust in Science Communication&lt;/h3&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VIDEO_ID&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;h4 id=&#34;key-takeaways&#34;&gt;Key Takeaways:&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Point 1&lt;/li&gt;&#xA;&lt;li&gt;Point 2&lt;/li&gt;&#xA;&lt;li&gt;Point 3&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#&#34;&gt;Read the full summary&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

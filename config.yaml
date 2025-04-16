@@ -1,0 +1,38 @@
+baseURL: "https://scopecomms.github.io/"
+languageCode: "en-us"
+title: "SCOPE"
+theme: "hugo-lithium"
+
+# Allow raw HTML in markdown
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Suppress warnings about HTML
+ignoreLogs: ['warning-goldmark-raw-html']
+
+params:
+  description: "Science Communication and Outreach for Public Engagement"
+  logo:
+    url: "images/scope-logo.png"
+    width: 50
+    height: 50
+  # Fix the highlightjs configuration
+  highlightjs: true  # Set this to true
+  highlightjsLang: ["r", "yaml"]  # Provide an array of languages
+  highlightjsTheme: "github"  # Specify a theme
+  custom_css: ["css/custom.css"]
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "Virtual Panels"
+      url: "/virtual-panels/"
+      weight: 2
+    - name: "Brewing Scientists"
+      url: "/brewing-scientists/"
+      weight: 3
+      
