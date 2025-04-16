@@ -15,7 +15,7 @@ ignoreLogs: ['warning-goldmark-raw-html']
 params:
   description: "Science Communication and Outreach for Public Engagement"
   logo:
-    url: "images/scope-logo.png"
+    url: "images/scope-geometric-logo.png"  # Changed from scope-logo.png
     width: 50
     height: 50
   # Fix the highlightjs configuration
