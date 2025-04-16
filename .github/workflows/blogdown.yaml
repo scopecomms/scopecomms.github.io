@@ -1,15 +1,19 @@
-name: Build and Deploy Site
+name: Build and Deploy
 
 on:
   push:
-    branches: [main, master]
+    branches: [ main ]
+
+permissions:
+  contents: write
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -17,22 +21,8 @@ jobs:
           hugo-version: '0.92.2'
           extended: true
 
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: '4.2.0'
-
-      - name: Install R Packages
-        run: |
-          Rscript -e 'install.packages(c("blogdown", "rmarkdown"))'
-
-      - name: Set Permissions
-        run: |
-          chmod -R 755 .
-
-      - name: Build Site with Hugo Directly
-        run: |
-          hugo --minify
+      - name: Build
+        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
