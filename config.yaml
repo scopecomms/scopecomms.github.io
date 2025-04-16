@@ -29,11 +29,15 @@ menu:
     - name: "Home"
       url: "/"
       weight: 1
+    - name: "About"
+      url: "/about/"
+      weight: 2
     - name: "Virtual Panels"
       url: "/virtual-panels/"
-      weight: 2
+      weight: 3
     - name: "Brewing Scientists"
       url: "/brewing-scientists/"
-      weight: 3
+      weight: 4
+      
       
 
